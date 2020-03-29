@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Goban } from '@sabaki/shudan'
+
+import './node_modules/@sabaki/shudan/css/goban.css'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Goban vertexSize={24} signMap={[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, -1, 0], [0, 0, -1, 1, 0], [0, 0, 0, 0, 0]]} />
     </View>
   );
 }
